@@ -27,10 +27,10 @@
     <meta property="twitter:description" content="Empowering global enterprises with enterprise-grade system integration, hardware distribution, and cutting-edge digital infrastructure in Dubai, UAE.">
     <meta property="twitter:image" content="https://bgftechdistribution.com/bgf-logo.jpg">
 
-    <!-- Fonts: Plus Jakarta Sans & Space Grotesk -->
+    <!-- Fonts: Plus Jakarta Sans, Space Grotesk, Outfit & Rajdhani -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome 6 Vector Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -44,7 +44,8 @@
                 extend: {
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
-                        display: ['Space Grotesk', 'sans-serif'],
+                        display: ['Outfit', 'Space Grotesk', 'sans-serif'],
+                        tech: ['Rajdhani', 'sans-serif'],
                     },
                     colors: {
                         dark: {
@@ -65,6 +66,7 @@
                         'spin-slow': 'spin 12s linear infinite',
                         'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
                         'float': 'float 6s ease-in-out infinite',
+                        'subtle-float': 'subtleFloat 4s ease-in-out infinite',
                         'border-beam': 'borderBeam 4s linear infinite',
                         'shimmer': 'shimmer 2.5s infinite',
                     },
@@ -72,6 +74,10 @@
                         float: {
                             '0%, 100%': { transform: 'translateY(0px)' },
                             '50%': { transform: 'translateY(-10px)' },
+                        },
+                        subtleFloat: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-3px) rotate(0.4deg)' },
                         },
                         pulseGlow: {
                             '0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
@@ -192,21 +198,21 @@
             width: 80%;
         }
 
-        /* Prominent Logo Wrapper Styling */
+        /* Frameless Logo Wrapper Styling with Subtle Shake & Touch Zoom */
         .logo-prominent {
-            background: #ffffff;
-            border-radius: 14px;
-            padding: 4px;
+            background: transparent;
+            border: none;
+            padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 25px rgba(0, 255, 157, 0.4), 0 0 10px rgba(0, 229, 255, 0.2);
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            border: 2px solid rgba(0, 255, 157, 0.6);
+            filter: drop-shadow(0 0 12px rgba(0, 255, 157, 0.45));
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+            cursor: pointer;
         }
-        .logo-prominent:hover {
-            box-shadow: 0 0 35px rgba(0, 255, 157, 0.7), 0 0 15px rgba(139, 92, 246, 0.4);
-            transform: scale(1.06) rotate(1deg);
+        .logo-prominent:hover, .logo-prominent:active {
+            transform: scale(1.12);
+            filter: drop-shadow(0 0 25px rgba(0, 255, 157, 0.9)) drop-shadow(0 0 15px rgba(0, 229, 255, 0.7));
         }
 
         /* Tech Background Grid */
@@ -271,18 +277,23 @@
     <!-- SECTION A: Dynamic Sticky Navbar featuring Prominent Large BGF Logo -->
     <header class="fixed top-0 left-0 right-0 z-50 glass-nav animated-border-glow transition-all duration-300" id="main-nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-24">
+            <div class="flex items-center justify-between h-24 sm:h-28">
                 
-                <!-- Large Prominent BGF Logo & Brand Title -->
+                <!-- Prominent Large Frameless BGF Logo & Corporate Brand Title -->
                 <a href="#hero" class="flex items-center gap-4 group">
-                    <div class="logo-prominent w-14 h-14 sm:w-16 sm:h-16 shrink-0 overflow-hidden">
+                    <div class="logo-prominent w-20 h-20 sm:w-24 sm:h-24 shrink-0 animate-subtle-float">
                         <img src="bgf-logo.jpg" alt="BGF Tech Distribution Logo" class="w-full h-full object-contain">
                     </div>
-                    <div>
-                        <span class="font-display font-extrabold text-2xl sm:text-3xl tracking-tight text-white block leading-none">
-                            BGF <span class="text-gradient-emerald">Tech Distribution</span>
-                        </span>
-                        <span class="text-xs uppercase font-bold tracking-widest text-slate-300 block mt-1 flex items-center gap-2">
+                    <div class="flex flex-col justify-center">
+                        <div class="flex items-center gap-2">
+                            <span class="font-display font-black text-2xl sm:text-3xl tracking-wide bg-gradient-to-r from-[#00E5FF] to-[#00FF9D] bg-clip-text text-transparent leading-none">
+                                BGF
+                            </span>
+                            <span class="font-display font-bold text-xl sm:text-2xl tracking-wider text-slate-100 uppercase leading-none">
+                                TECH <span class="text-accent-emerald font-semibold">DISTRIBUTION</span>
+                            </span>
+                        </div>
+                        <span class="text-[10px] sm:text-xs uppercase font-bold tracking-[0.2em] text-[#00E5FF] block mt-1.5 flex items-center gap-2">
                             <span class="w-2 h-2 rounded-full bg-accent-emerald animate-ping"></span>
                             Global Technology Enterprise
                         </span>
@@ -344,14 +355,6 @@
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
-            <!-- High-Impact Featured Brand Logo Emblem -->
-            <div class="flex flex-col items-center justify-center mb-8 animate-float">
-                <div class="relative p-2 rounded-2xl bg-gradient-to-br from-accent-emerald via-accent-teal to-accent-violet p-[2px] shadow-[0_0_50px_rgba(0,255,157,0.4)]">
-                    <div class="bg-white p-3 sm:p-4 rounded-[14px] w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center shadow-inner">
-                        <img src="bgf-logo.jpg" alt="BGF Tech Distribution Primary Logo" class="w-full h-full object-contain">
-                    </div>
-                </div>
-            </div>
 
             <!-- Tech Badge Header -->
             <div class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-slate-900/90 border border-accent-emerald/40 text-accent-emerald text-xs sm:text-sm font-bold uppercase tracking-wider backdrop-blur-md mb-8 shadow-[0_0_30px_rgba(0,255,157,0.25)] animate-pulse-glow">
@@ -849,14 +852,19 @@
                 <!-- Brand Column -->
                 <div class="md:col-span-5 space-y-4">
                     <a href="#hero" class="flex items-center gap-4">
-                        <div class="logo-prominent w-14 h-14 shrink-0 overflow-hidden">
+                        <div class="logo-prominent w-18 h-18 sm:w-20 sm:h-20 shrink-0 animate-subtle-float">
                             <img src="bgf-logo.jpg" alt="BGF Logo" class="w-full h-full object-contain">
                         </div>
                         <div>
-                            <span class="font-display font-bold text-xl text-white block">
-                                BGF <span class="text-gradient-emerald">Tech Distribution</span>
-                            </span>
-                            <span class="text-xs text-slate-400">Global Technology Enterprise</span>
+                            <div class="flex items-center gap-1.5">
+                                <span class="font-display font-black text-xl sm:text-2xl tracking-wide bg-gradient-to-r from-[#00E5FF] to-[#00FF9D] bg-clip-text text-transparent leading-none">
+                                    BGF
+                                </span>
+                                <span class="font-display font-bold text-lg sm:text-xl tracking-wider text-slate-100 uppercase leading-none">
+                                    TECH <span class="text-accent-emerald font-semibold">DISTRIBUTION</span>
+                                </span>
+                            </div>
+                            <span class="text-xs uppercase font-bold text-[#00E5FF] tracking-wider block mt-1">Global Technology Enterprise</span>
                         </div>
                     </a>
                     <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-md">
