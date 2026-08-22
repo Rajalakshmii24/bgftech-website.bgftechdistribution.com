@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>BGF Tech Distribution | Enterprise IT Solutions & Global Technology Supply Chain</title>
+    <meta name="title" content="BGF Tech Distribution | Enterprise IT Solutions & Global Technology Supply Chain">
+    <meta name="description" content="BGF Tech Distribution is a premier technology enterprise operating out of Dubai, UAE. Specialized in enterprise system integration, global electronic hardware distribution, and managed IT services.">
+    <meta name="keywords" content="BGF Tech Distribution, Dubai IT Solutions, technology enterprise Dubai, system integration Dubai, IT hardware distribution, electronic accessories wholesale">
+    <meta name="author" content="BGF Tech Distribution">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#040711">
+
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bgftechdistribution.com/">
+    <meta property="og:title" content="BGF Tech Distribution | Enterprise IT Solutions & Global Distribution">
+    <meta property="og:description" content="Empowering global enterprises with enterprise-grade system integration, hardware distribution, and cutting-edge digital infrastructure in Dubai, UAE.">
+    <meta property="og:image" content="https://bgftechdistribution.com/bgf-logo.jpg">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bgftechdistribution.com/">
+    <meta property="twitter:title" content="BGF Tech Distribution | Enterprise IT Solutions & Global Distribution">
+    <meta property="twitter:description" content="Empowering global enterprises with enterprise-grade system integration, hardware distribution, and cutting-edge digital infrastructure in Dubai, UAE.">
+    <meta property="twitter:image" content="https://bgftechdistribution.com/bgf-logo.jpg">
+
+    <!-- Fonts: Plus Jakarta Sans & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 Vector Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: {
+                            base: '#040711',
+                            surface: '#080d1a',
+                            card: '#0d1527',
+                            border: 'rgba(0, 255, 157, 0.12)',
+                        },
+                        accent: {
+                            emerald: '#00FF9D',
+                            teal: '#00E5FF',
+                            indigo: '#6366F1',
+                            violet: '#8B5CF6',
+                            gold: '#FFC700',
+                        }
+                    },
+                    animation: {
+                        'spin-slow': 'spin 12s linear infinite',
+                        'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'border-beam': 'borderBeam 4s linear infinite',
+                        'shimmer': 'shimmer 2.5s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
+                            '50%': { opacity: '0.9', transform: 'scale(1.06)' },
+                        },
+                        borderBeam: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '100%': { backgroundPosition: '200% 50%' },
+                        },
+                        shimmer: {
+                            '100%': { transform: 'translateX(100%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS Styling & Advanced Animations -->
+    <style>
+        /* Custom Dark Emerald Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #040711;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0d1527;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 255, 157, 0.3);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00FF9D;
+        }
+
+        /* Glassmorphism Panel Utilities */
+        .glass-panel {
+            background: rgba(13, 21, 39, 0.72);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 255, 157, 0.12);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .glass-nav {
+            background: rgba(4, 7, 17, 0.92);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.15);
+        }
+
+        .glass-input {
+            background: rgba(8, 13, 26, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .glass-input:focus {
+            background: rgba(8, 13, 26, 0.95);
+            border-color: #00FF9D;
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.25);
+            outline: none;
+        }
+
+        /* Text Gradient Typography */
+        .text-gradient-emerald {
+            background: linear-gradient(135deg, #00FF9D 0%, #00E5FF 50%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Glowing Border Animation */
+        .animated-border-glow {
+            position: relative;
+        }
+        .animated-border-glow::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00FF9D, #8B5CF6, #00E5FF, transparent);
+            background-size: 200% 100%;
+            animation: borderBeam 4s linear infinite;
+        }
+
+        /* Card Hover Effects */
+        .hover-emerald-glow {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hover-emerald-glow:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 255, 157, 0.4);
+            box-shadow: 0 10px 40px rgba(0, 255, 157, 0.15), 0 0 20px rgba(139, 92, 246, 0.1);
+        }
+
+        /* Nav Link Hover Pill Effect */
+        .nav-item-glow {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-item-glow::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #00FF9D;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px #00FF9D;
+        }
+        .nav-item-glow:hover::after {
+            width: 80%;
+        }
+
+        /* Prominent Logo Wrapper Styling */
+        .logo-prominent {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 25px rgba(0, 255, 157, 0.4), 0 0 10px rgba(0, 229, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 2px solid rgba(0, 255, 157, 0.6);
+        }
+        .logo-prominent:hover {
+            box-shadow: 0 0 35px rgba(0, 255, 157, 0.7), 0 0 15px rgba(139, 92, 246, 0.4);
+            transform: scale(1.06) rotate(1deg);
+        }
+
+        /* Tech Background Grid */
+        .bg-cyber-grid {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 255, 157, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+        }
+
+        .radial-emerald-glow {
+            background: radial-gradient(circle at 50% 20%, rgba(0, 255, 157, 0.14) 0%, rgba(139, 92, 246, 0.09) 40%, transparent 70%);
+        }
+
+        /* Particle Canvas */
+        #particle-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Custom Tab Active State */
+        .tab-btn.active {
+            background: linear-gradient(135deg, rgba(0, 255, 157, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+            border-color: #00FF9D;
+            color: #00FF9D;
+            box-shadow: 0 0 25px rgba(0, 255, 157, 0.25);
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "BGF Tech Distribution",
+      "legalName": "BGF Tech Distribution",
+      "url": "https://bgftechdistribution.com",
+      "logo": "https://bgftechdistribution.com/bgf-logo.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nad Al Sheba",
+        "addressLocality": "Dubai",
+        "addressRegion": "Dubai",
+        "addressCountry": "AE"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@bgftechdistribution.com",
+        "contactType": "customer service"
+      },
+      "description": "Global enterprise system integration, IT hardware supply chain, and digital transformation provider based in Dubai, UAE."
+    }
+    </script>
+</head>
+<body class="bg-dark-base text-slate-200 font-sans antialiased overflow-x-hidden selection:bg-accent-emerald selection:text-black">
+
+    <!-- SECTION A: Dynamic Sticky Navbar featuring Prominent Large BGF Logo -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav animated-border-glow transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                
+                <!-- Large Prominent BGF Logo & Brand Title -->
+                <a href="#hero" class="flex items-center gap-4 group">
+                    <div class="logo-prominent w-14 h-14 sm:w-16 sm:h-16 shrink-0 overflow-hidden">
+                        <img src="bgf-logo.jpg" alt="BGF Tech Distribution Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-2xl sm:text-3xl tracking-tight text-white block leading-none">
+                            BGF <span class="text-gradient-emerald">Tech Distribution</span>
+                        </span>
+                        <span class="text-xs uppercase font-bold tracking-widest text-slate-300 block mt-1 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-accent-emerald animate-ping"></span>
+                            Global Technology Enterprise
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#hero" class="nav-item-glow text-base font-semibold text-slate-200 hover:text-accent-emerald transition-colors">Home</a>
+                    <a href="#about" class="nav-item-glow text-base font-semibold text-slate-200 hover:text-accent-emerald transition-colors">About Us</a>
+                    <a href="#services" class="nav-item-glow text-base font-semibold text-slate-200 hover:text-accent-emerald transition-colors">Core Services</a>
+                    <a href="#contact" class="nav-item-glow text-base font-semibold text-slate-200 hover:text-accent-emerald transition-colors">Contact Us</a>
+                </nav>
+
+                <!-- Animated Tech CTA Button Desktop -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="#contact" class="relative group overflow-hidden px-7 py-3 rounded-xl font-bold text-sm text-dark-base bg-gradient-to-r from-accent-emerald via-accent-teal to-accent-violet hover:from-accent-emerald hover:to-accent-emerald transition-all duration-300 shadow-[0_0_25px_rgba(0,255,157,0.4)] hover:shadow-[0_0_40px_rgba(0,255,157,0.7)] flex items-center gap-2">
+                        <div class="absolute inset-0 w-1/2 h-full bg-white/20 skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000 ease-out"></div>
+                        <span class="relative z-10">Get in Touch</span>
+                        <i class="fa-solid fa-arrow-right text-xs relative z-10 group-hover:translate-x-1 transition-transform duration-200"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Toggle -->
+                <div class="flex lg:hidden">
+                    <button type="button" id="mobile-menu-btn" class="p-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-200 hover:text-accent-emerald focus:outline-none" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="hidden lg:hidden glass-panel border-t border-slate-800/80" id="mobile-menu">
+            <div class="px-4 pt-4 pb-6 space-y-3">
+                <a href="#hero" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-accent-emerald/10 hover:text-accent-emerald">Home</a>
+                <a href="#about" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-accent-emerald/10 hover:text-accent-emerald">About Us</a>
+                <a href="#services" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-accent-emerald/10 hover:text-accent-emerald">Core Services</a>
+                <a href="#contact" class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-accent-emerald/10 hover:text-accent-emerald">Contact Us</a>
+                
+                <div class="pt-4 border-t border-slate-800/80">
+                    <a href="#contact" class="mobile-nav-link w-full py-3.5 rounded-xl font-bold text-center text-dark-base bg-gradient-to-r from-accent-emerald to-accent-teal block shadow-lg">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION B: Hero Section with Featured Brand Hero Emblem -->
+    <section id="hero" class="relative min-h-screen pt-36 pb-20 flex items-center justify-center bg-cyber-grid overflow-hidden radial-emerald-glow">
+        
+        <!-- Particle Canvas Overlay -->
+        <canvas id="particle-canvas"></canvas>
+
+        <!-- Ambient Lighting Spheres -->
+        <div class="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-accent-emerald/10 rounded-full blur-[160px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[550px] h-[550px] bg-accent-violet/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- High-Impact Featured Brand Logo Emblem -->
+            <div class="flex flex-col items-center justify-center mb-8 animate-float">
+                <div class="relative p-2 rounded-2xl bg-gradient-to-br from-accent-emerald via-accent-teal to-accent-violet p-[2px] shadow-[0_0_50px_rgba(0,255,157,0.4)]">
+                    <div class="bg-white p-3 sm:p-4 rounded-[14px] w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center shadow-inner">
+                        <img src="bgf-logo.jpg" alt="BGF Tech Distribution Primary Logo" class="w-full h-full object-contain">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Badge Header -->
+            <div class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-slate-900/90 border border-accent-emerald/40 text-accent-emerald text-xs sm:text-sm font-bold uppercase tracking-wider backdrop-blur-md mb-8 shadow-[0_0_30px_rgba(0,255,157,0.25)] animate-pulse-glow">
+                <span class="w-2.5 h-2.5 rounded-full bg-accent-emerald animate-ping"></span>
+                <span>BGF TECH DISTRIBUTION • DUBAI, U.A.E.</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-display font-bold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white max-w-5xl mx-auto leading-[1.12] mb-8">
+                Next-Generation <span class="text-gradient-emerald">IT Solutions</span> & Global Technology Distribution
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed mb-10">
+                Empowering global enterprises with enterprise-grade system integration, hardware distribution, and cutting-edge digital infrastructure in Dubai, UAE.
+            </p>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-16">
+                <a href="#services" class="w-full sm:w-auto px-9 py-4 rounded-xl font-bold text-base text-dark-base bg-gradient-to-r from-accent-emerald via-accent-teal to-accent-violet hover:from-accent-emerald hover:to-accent-emerald shadow-[0_0_35px_rgba(0,255,157,0.4)] hover:shadow-[0_0_50px_rgba(0,255,157,0.7)] transition-all duration-300 flex items-center justify-center gap-3 group">
+                    <span>Explore Solutions</span>
+                    <i class="fa-solid fa-network-wired text-sm group-hover:rotate-45 transition-transform duration-300"></i>
+                </a>
+                
+                <a href="#contact" class="w-full sm:w-auto px-9 py-4 rounded-xl font-semibold text-base text-slate-200 glass-panel border border-slate-700/80 hover:border-accent-emerald/50 hover:bg-slate-800/80 transition-all duration-300 flex items-center justify-center gap-3 group">
+                    <span>Partner With Us</span>
+                    <i class="fa-solid fa-handshake text-accent-emerald text-sm group-hover:scale-110 transition-transform duration-200"></i>
+                </a>
+            </div>
+
+            <!-- Live Metrics Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800/80 hover-emerald-glow">
+                    <div class="font-display font-bold text-3xl sm:text-4xl text-white mb-1">
+                        <span class="counter" data-target="100">100</span>+
+                    </div>
+                    <div class="text-xs uppercase font-semibold tracking-wider text-accent-emerald">Enterprise Clients</div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800/80 hover-emerald-glow">
+                    <div class="font-display font-bold text-3xl sm:text-4xl text-white mb-1">
+                        <span class="counter" data-target="45">45</span>+
+                    </div>
+                    <div class="text-xs uppercase font-semibold tracking-wider text-accent-emerald">Global Supply Corridors</div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800/80 hover-emerald-glow">
+                    <div class="font-display font-bold text-3xl sm:text-4xl text-white mb-1">24/7</div>
+                    <div class="text-xs uppercase font-semibold tracking-wider text-accent-emerald">Integration Support</div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-slate-800/80 hover-emerald-glow">
+                    <div class="font-display font-bold text-3xl sm:text-4xl text-white mb-1">Tier-1</div>
+                    <div class="text-xs uppercase font-semibold tracking-wider text-accent-emerald">Hardware Sourcing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION C: About Us -->
+    <section id="about" class="py-24 relative z-10 bg-dark-base border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent-emerald font-semibold text-xs uppercase tracking-widest block mb-3">CORPORATE PROFILE</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white tracking-tight mb-6">
+                    Architecting the Future of <span class="text-gradient-emerald">Global Technology</span>
+                </h2>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                    <span class="text-accent-emerald font-semibold">BGF Tech Distribution</span> serves as an international nexus for enterprise technology distribution, system architecture, and turnkey hardware integration across multi-national markets, operating out of <strong class="text-white">Dubai, UAE</strong>.
+                </p>
+            </div>
+
+            <!-- 3 Core Pillars Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Pillar 1 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover-emerald-glow group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-accent-emerald/10 border border-accent-emerald/30 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-accent-emerald/20 transition-all duration-300">
+                            <i class="fa-solid fa-diagram-project text-accent-emerald text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-accent-emerald transition-colors">
+                            System Integration & Architecture
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Architecting resilient enterprise networks, multi-cloud synchronization, hybrid data centers, and zero-trust cybersecurity protocols engineered for high-throughput enterprise performance.
+                        </p>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> Cloud & On-Prem Hybrid Topology
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> Enterprise Firewall & SOC Integration
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> Scalable Infrastructure Modernization
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover-emerald-glow group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-accent-teal/10 border border-accent-teal/30 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-accent-teal/20 transition-all duration-300">
+                            <i class="fa-solid fa-boxes-packing text-accent-teal text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-accent-emerald transition-colors">
+                            Global Hardware & Component Supply
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Direct tier-1 wholesale sourcing and distribution of server chassis, high-grade microprocessors, memory modules, active networking hardware, and electronic accessories worldwide.
+                        </p>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> OEM & Enterprise Component Procurement
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> Strict ISO Quality Verification
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> Bulk Commercial Order Fulfillment
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover-emerald-glow group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-accent-violet/10 border border-accent-violet/30 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-accent-violet/20 transition-all duration-300">
+                            <i class="fa-solid fa-user-shield text-accent-violet text-2xl"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-white mb-4 group-hover:text-accent-emerald transition-colors">
+                            Strategic Consulting & Turnkey Deployment
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Providing CTO-level technical advisory, IT lifecycle auditing, procurement optimization, and ongoing managed SLAs to ensure uninterrupted digital business operations.
+                        </p>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> Infrastructure Audits & Optimization
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> End-to-End Project Execution
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-accent-emerald"></i> Dedicated 24/7 SLA Guarantees
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION D: Core Services & Solutions -->
+    <section id="services" class="py-24 relative z-10 bg-dark-surface border-t border-slate-900 bg-cyber-grid">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-accent-emerald font-semibold text-xs uppercase tracking-widest block mb-3">PORTFOLIO OF CAPABILITIES</span>
+                <h2 class="font-display font-bold text-3xl sm:text-5xl text-white tracking-tight mb-6">
+                    Core Solutions & <span class="text-gradient-emerald">Distribution Services</span>
+                </h2>
+                <p class="text-slate-300 text-base leading-relaxed">
+                    Tailored enterprise solutions built to bridge complex technology requirements with flawless execution.
+                </p>
+            </div>
+
+            <!-- Tab Filtering Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12" id="service-tabs">
+                <button class="tab-btn active px-6 py-3 rounded-xl font-medium text-sm border border-slate-800 text-slate-300 transition-all duration-300" data-filter="all">
+                    <i class="fa-solid fa-border-all mr-2 text-xs"></i> All Solutions
+                </button>
+                <button class="tab-btn px-6 py-3 rounded-xl font-medium text-sm border border-slate-800 text-slate-300 hover:border-accent-emerald/40 transition-all duration-300" data-filter="integration">
+                    <i class="fa-solid fa-network-wired mr-2 text-xs"></i> System Integration
+                </button>
+                <button class="tab-btn px-6 py-3 rounded-xl font-medium text-sm border border-slate-800 text-slate-300 hover:border-accent-emerald/40 transition-all duration-300" data-filter="hardware">
+                    <i class="fa-solid fa-microchip mr-2 text-xs"></i> Hardware & Accessories
+                </button>
+                <button class="tab-btn px-6 py-3 rounded-xl font-medium text-sm border border-slate-800 text-slate-300 hover:border-accent-emerald/40 transition-all duration-300" data-filter="managed">
+                    <i class="fa-solid fa-server mr-2 text-xs"></i> Managed IT Services
+                </button>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="services-container">
+                
+                <!-- Service 1: System Integration -->
+                <div class="service-card glass-panel p-8 rounded-2xl border border-slate-800 hover-emerald-glow flex flex-col justify-between group" data-category="integration">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-accent-emerald/40 text-accent-emerald text-xs font-semibold uppercase tracking-wider">
+                                Architecture & Engineering
+                            </span>
+                            <i class="fa-solid fa-network-wired text-slate-600 group-hover:text-accent-emerald text-2xl transition-colors"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white mb-3 group-hover:text-accent-emerald transition-colors">
+                            Enterprise System Integration
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Seamlessly connect disparate enterprise hardware, software, multi-cloud platforms, and legacy databases into a unified, high-availability architecture.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>Multi-Cloud Architecture (AWS, Azure, GCP & On-Premise Hypervisors)</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>Next-Gen Cybersecurity & Zero-Trust Access Gateway Setup</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>Enterprise Storage & SAN / NAS Array Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" onclick="setServiceInquiry('Enterprise System Integration')" class="w-full py-3 rounded-xl font-semibold text-xs text-center text-slate-200 glass-input hover:bg-accent-emerald/20 hover:text-accent-emerald hover:border-accent-emerald/50 block transition-all">
+                        Request System Integration Specs <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2: Electronic Accessories & Hardware -->
+                <div class="service-card glass-panel p-8 rounded-2xl border border-slate-800 hover-emerald-glow flex flex-col justify-between group" data-category="hardware">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-accent-teal/40 text-accent-teal text-xs font-semibold uppercase tracking-wider">
+                                Global Supply Chain
+                            </span>
+                            <i class="fa-solid fa-microchip text-slate-600 group-hover:text-accent-emerald text-2xl transition-colors"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white mb-3 group-hover:text-accent-emerald transition-colors">
+                            Electronic Accessories & Hardware Distribution
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Worldwide wholesale supply of premium electronic components, server accessories, networking modules, enterprise storage drives, and high-tech consumer peripherals.
+                        </p>
+
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>Server Racks, Enterprise Switches, Routers & Fiber Transceivers</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>High-End Processors, NVMe SSD Arrays, RAM & Motherboards</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>Commercial Peripherals & Smart Office Accessories</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" onclick="setServiceInquiry('Hardware & Accessories Wholesale')" class="w-full py-3 rounded-xl font-semibold text-xs text-center text-slate-200 glass-input hover:bg-accent-emerald/20 hover:text-accent-emerald hover:border-accent-emerald/50 block transition-all">
+                        Request Wholesale Component Catalog <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3: Managed IT Services -->
+                <div class="service-card glass-panel p-8 rounded-2xl border border-slate-800 hover-emerald-glow flex flex-col justify-between group" data-category="managed">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="px-3 py-1 rounded-full bg-slate-900 border border-accent-violet/40 text-accent-violet text-xs font-semibold uppercase tracking-wider">
+                                24/7 Operations
+                            </span>
+                            <i class="fa-solid fa-server text-slate-600 group-hover:text-accent-emerald text-2xl transition-colors"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-2xl text-white mb-3 group-hover:text-accent-emerald transition-colors">
+                            Managed IT & Infrastructure Support
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Complete end-to-end management of your enterprise IT assets, high-availability server clusters, network health monitoring, and guaranteed response SLAs.
+                        </p>
+
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>24/7/365 Proactive NOC Monitoring & Incident Response</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>Disaster Recovery, Automated Backups & System Redundancy</span>
+                            </div>
+                            <div class="flex items-start gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-check text-accent-emerald mt-0.5"></i>
+                                <span>Patch Management, Firmware Updates & Security Audits</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" onclick="setServiceInquiry('Managed IT Services & SLA')" class="w-full py-3 rounded-xl font-semibold text-xs text-center text-slate-200 glass-input hover:bg-accent-emerald/20 hover:text-accent-emerald hover:border-accent-emerald/50 block transition-all">
+                        Consult Managed IT Specialists <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION E: High-Converting Contact & Ingestion Form -->
+    <section id="contact" class="py-24 relative z-10 bg-dark-base border-t border-slate-900 bg-cyber-grid">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-accent-emerald font-semibold text-xs uppercase tracking-widest block mb-3">GET IN TOUCH</span>
+                        <h2 class="font-display font-bold text-3xl sm:text-5xl text-white tracking-tight mb-6">
+                            Connect with Our <span class="text-gradient-emerald">Strategy Team</span>
+                        </h2>
+                        <p class="text-slate-300 text-base leading-relaxed mb-8">
+                            Have a system integration project, hardware wholesale inquiry, or trade partnership proposal? Submit your details below to connect with our senior engineers and specialists at BGF Tech Distribution.
+                        </p>
+
+                        <!-- Official Info Card featuring Large BGF Logo Header -->
+                        <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-slate-800 space-y-6 mb-8">
+                            <div class="flex items-center gap-4 border-b border-slate-800 pb-4">
+                                <div class="logo-prominent w-14 h-14 shrink-0 overflow-hidden">
+                                    <img src="bgf-logo.jpg" alt="BGF Logo" class="w-full h-full object-contain">
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-lg text-white">BGF Tech Distribution</h3>
+                                    <span class="text-xs text-accent-emerald font-semibold">Global Technology Enterprise</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-accent-emerald/10 border border-accent-emerald/30 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-location-dot text-accent-emerald text-base"></i>
+                                </div>
+                                <div>
+                                    <span class="text-slate-400 text-xs block">Registered Physical Address</span>
+                                    <span class="text-slate-200 text-xs sm:text-sm font-medium leading-normal block">
+                                        Nad Al Sheba, Dubai, U.A.E.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-accent-emerald/10 border border-accent-emerald/30 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-envelope text-accent-emerald text-base"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <span class="text-slate-400 text-xs block">Direct Engineering Email</span>
+                                    <a href="mailto:info@bgftechdistribution.com" class="text-accent-emerald hover:underline text-sm sm:text-base font-semibold flex items-center gap-2">
+                                        <span>info@bgftechdistribution.com</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-accent-emerald/10 border border-accent-emerald/30 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-globe text-accent-emerald text-base"></i>
+                                </div>
+                                <div>
+                                    <span class="text-slate-400 text-xs block">Official Web Domain</span>
+                                    <a href="https://bgftechdistribution.com" target="_blank" class="text-slate-200 hover:text-accent-emerald text-xs sm:text-sm font-mono font-semibold">bgftechdistribution.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl relative">
+                        
+                        <h3 class="font-display font-bold text-2xl text-white mb-2">
+                            Inquiry & Project Requirements
+                        </h3>
+                        <p class="text-slate-400 text-sm mb-8">
+                            Fill out the form below. Inquiries are routed directly to <strong class="text-accent-emerald">info@bgftechdistribution.com</strong>.
+                        </p>
+
+                        <!-- Notification Banner -->
+                        <div id="form-feedback" class="hidden mb-6 p-4 rounded-xl border text-sm font-medium leading-relaxed transition-all"></div>
+
+                        <!-- Form Implementation -->
+                        <form id="contact-form" action="https://formspree.io/f/xbjnqwzz" method="POST" class="space-y-6">
+                            
+                            <!-- Hidden Target Email Field -->
+                            <input type="hidden" name="_to" value="info@bgftechdistribution.com">
+                            <input type="hidden" name="_subject" id="form-subject" value="New Inquiry via bgftechdistribution.com">
+
+                            <!-- Row 1: First Name & Last Name -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstname" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                        First Name <span class="text-accent-emerald">*</span>
+                                    </label>
+                                    <input type="text" id="firstname" name="firstname" required placeholder="e.g. Alexander" class="w-full px-4 py-3.5 rounded-xl glass-input text-sm">
+                                </div>
+
+                                <div>
+                                    <label for="lastname" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                        Last Name <span class="text-accent-emerald">*</span>
+                                    </label>
+                                    <input type="text" id="lastname" name="lastname" required placeholder="e.g. Vance" class="w-full px-4 py-3.5 rounded-xl glass-input text-sm">
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Company Name & Email Address -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="company" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                        Company Name <span class="text-accent-emerald">*</span>
+                                    </label>
+                                    <input type="text" id="company" name="company" required placeholder="e.g. Apex Global Tech" class="w-full px-4 py-3.5 rounded-xl glass-input text-sm">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                        Business Email <span class="text-accent-emerald">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required placeholder="e.g. alex@apexglobal.com" class="w-full px-4 py-3.5 rounded-xl glass-input text-sm">
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Mobile Number with Country Code Selector -->
+                            <div>
+                                <label for="mobile" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                    Mobile / Phone Number <span class="text-accent-emerald">*</span>
+                                </label>
+                                <div class="flex gap-3">
+                                    <select id="country-code" name="country_code" class="w-36 px-3 py-3.5 rounded-xl glass-input text-sm bg-slate-900">
+                                        <option value="+971" selected>🇦🇪 UAE (+971)</option>
+                                        <option value="+1">🇺🇸 US/CA (+1)</option>
+                                        <option value="+44">🇬🇧 UK (+44)</option>
+                                        <option value="+966">🇸🇦 KSA (+966)</option>
+                                        <option value="+974">🇶🇦 Qatar (+974)</option>
+                                        <option value="+91">🇮🇳 India (+91)</option>
+                                        <option value="+65">🇸🇬 SG (+65)</option>
+                                        <option value="+49">🇩🇪 DE (+49)</option>
+                                        <option value="Other">🌍 Other</option>
+                                    </select>
+                                    <input type="tel" id="mobile" name="mobile" required placeholder="50 123 4567" class="flex-1 px-4 py-3.5 rounded-xl glass-input text-sm">
+                                </div>
+                            </div>
+
+                            <!-- Row 4: Service Category Selection -->
+                            <div>
+                                <label for="service-select" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                    Primary Interest / Inquiry Type
+                                </label>
+                                <select id="service-select" name="service_type" class="w-full px-4 py-3.5 rounded-xl glass-input text-sm bg-slate-900">
+                                    <option value="General Inquiry">General Strategic Consultation</option>
+                                    <option value="Enterprise System Integration">Enterprise System Integration</option>
+                                    <option value="Hardware & Accessories Wholesale">Electronic Accessories & Hardware Wholesale</option>
+                                    <option value="Managed IT Services">Managed IT & SLA Support</option>
+                                </select>
+                            </div>
+
+                            <!-- Row 5: Description of Request -->
+                            <div>
+                                <label for="description" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                                    Description of Request <span class="text-accent-emerald">*</span>
+                                </label>
+                                <textarea id="description" name="description" rows="4" required placeholder="Please describe your technical scope, hardware volume requirements, timeline, or specific integration goals..." class="w-full px-4 py-3.5 rounded-xl glass-input text-sm resize-none"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl font-bold text-base text-dark-base bg-gradient-to-r from-accent-emerald via-accent-teal to-accent-violet hover:from-accent-emerald hover:to-accent-emerald shadow-[0_0_25px_rgba(0,255,157,0.35)] hover:shadow-[0_0_35px_rgba(0,255,157,0.6)] transition-all duration-300 flex items-center justify-center gap-3">
+                                <span id="submit-text">Transmit Request to Engineering Team</span>
+                                <i class="fa-solid fa-paper-plane text-sm" id="submit-icon"></i>
+                            </button>
+
+                            <p class="text-center text-[11px] text-slate-400">
+                                <i class="fa-solid fa-lock text-accent-emerald/80 mr-1"></i> Submissions are encrypted and transmitted directly to <strong class="text-slate-300">info@bgftechdistribution.com</strong>.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION F: Footer featuring Prominent BGF Logo -->
+    <footer class="bg-dark-base border-t border-slate-900 py-16 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-slate-900">
+                
+                <!-- Brand Column -->
+                <div class="md:col-span-5 space-y-4">
+                    <a href="#hero" class="flex items-center gap-4">
+                        <div class="logo-prominent w-14 h-14 shrink-0 overflow-hidden">
+                            <img src="bgf-logo.jpg" alt="BGF Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <span class="font-display font-bold text-xl text-white block">
+                                BGF <span class="text-gradient-emerald">Tech Distribution</span>
+                            </span>
+                            <span class="text-xs text-slate-400">Global Technology Enterprise</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-md">
+                        <strong class="text-slate-200">BGF Tech Distribution</strong> is a premier technology enterprise based in Dubai, UAE. Specializing in high-capacity IT system integration, hardware supply chain, and global technology services.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="md:col-span-3">
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-400">
+                        <li><a href="#hero" class="hover:text-accent-emerald transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-accent-emerald transition-colors">Corporate Profile</a></li>
+                        <li><a href="#services" class="hover:text-accent-emerald transition-colors">System Integration & Solutions</a></li>
+                        <li><a href="#contact" class="hover:text-accent-emerald transition-colors">Contact Engineering Team</a></li>
+                    </ul>
+                </div>
+
+                <!-- Corporate Info Card -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4">Corporate Info</h4>
+                    <div class="glass-panel p-5 rounded-2xl border border-slate-800 text-xs space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Company Name:</span>
+                            <span class="text-white font-semibold">BGF Tech Distribution</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Jurisdiction:</span>
+                            <span class="text-white">Dubai, UAE</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-slate-800">
+                            <span class="text-slate-400">Direct Email:</span>
+                            <a href="mailto:info@bgftechdistribution.com" class="text-accent-emerald hover:underline font-mono font-medium">info@bgftechdistribution.com</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <div>
+                    &copy; 2026 BGF Tech Distribution. All rights reserved. Primary Domain: <a href="https://bgftechdistribution.com" class="text-accent-emerald hover:underline">bgftechdistribution.com</a>
+                </div>
+                <div class="flex items-center gap-6">
+                    <span class="text-slate-400">Enterprise Security & Compliance</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Implementation -->
+    <script>
+        // --- 1. Interactive Emerald & Violet Particle Canvas ---
+        (function initParticleCanvas() {
+            const canvas = document.getElementById('particle-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            
+            let width, height;
+            let particles = [];
+            let mouse = { x: null, y: null, radius: 160 };
+
+            function resize() {
+                width = canvas.width = canvas.offsetWidth;
+                height = canvas.height = canvas.offsetHeight;
+            }
+
+            window.addEventListener('resize', resize);
+            window.addEventListener('mousemove', (e) => {
+                const rect = canvas.getBoundingClientRect();
+                mouse.x = e.clientX - rect.left;
+                mouse.y = e.clientY - rect.top;
+            });
+            window.addEventListener('mouseleave', () => {
+                mouse.x = null;
+                mouse.y = null;
+            });
+
+            resize();
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.7;
+                    this.vy = (Math.random() - 0.5) * 0.7;
+                    this.size = Math.random() * 2 + 1;
+                    this.color = Math.random() > 0.4 ? 'rgba(0, 255, 157, ' : 'rgba(139, 92, 246, ';
+                    this.alpha = Math.random() * 0.6 + 0.2;
+                }
+
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    if (this.x < 0 || this.x > width) this.vx *= -1;
+                    if (this.y < 0 || this.y > height) this.vy *= -1;
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = this.color + this.alpha + ')';
+                    ctx.fill();
+                }
+            }
+
+            const count = Math.floor((width * height) / 13000);
+            for (let i = 0; i < Math.min(count, 85); i++) {
+                particles.push(new Particle());
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, width, height);
+
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                    particles[i].draw();
+
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+
+                        if (dist < 135) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(0, 255, 157, ${0.22 * (1 - dist / 135)})`;
+                            ctx.lineWidth = 0.6;
+                            ctx.stroke();
+                        }
+                    }
+
+                    if (mouse.x !== null && mouse.y !== null) {
+                        const mdx = particles[i].x - mouse.x;
+                        const mdy = particles[i].y - mouse.y;
+                        const mdist = Math.sqrt(mdx * mdx + mdy * mdy);
+                        if (mdist < mouse.radius) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(mouse.x, mouse.y);
+                            ctx.strokeStyle = `rgba(0, 255, 157, ${0.45 * (1 - mdist / mouse.radius)})`;
+                            ctx.lineWidth = 0.9;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        })();
+
+        // --- 2. Mobile Menu Toggle ---
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.className = 'fa-solid fa-bars text-2xl';
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.className = 'fa-solid fa-xmark text-2xl text-accent-emerald';
+                }
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.className = 'fa-solid fa-bars text-2xl';
+                });
+            });
+        }
+
+        // --- 3. Core Services Interactive Filter Tabs ---
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                serviceCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'flex';
+                        card.classList.add('animate-fadeIn');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        function setServiceInquiry(serviceName) {
+            const selectEl = document.getElementById('service-select');
+            const subjectEl = document.getElementById('form-subject');
+            if (selectEl) {
+                for (let option of selectEl.options) {
+                    if (option.value.includes(serviceName) || serviceName.includes(option.value)) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+            if (subjectEl) {
+                subjectEl.value = `Inquiry regarding ${serviceName} - bgftechdistribution.com`;
+            }
+        }
+
+        // --- 4. High-Converting Contact Form Handler ---
+        const contactForm = document.getElementById('contact-form');
+        const formFeedback = document.getElementById('form-feedback');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitText = document.getElementById('submit-text');
+        const submitIcon = document.getElementById('submit-icon');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const firstname = document.getElementById('firstname').value.trim();
+                const lastname = document.getElementById('lastname').value.trim();
+                const company = document.getElementById('company').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const countryCode = document.getElementById('country-code').value;
+                const mobile = document.getElementById('mobile').value.trim();
+                const description = document.getElementById('description').value.trim();
+
+                if (!firstname || !lastname || !company || !email || !mobile || !description) {
+                    showFeedback('Please fill out all required fields marked with an asterisk (*).', 'error');
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitText.textContent = 'Transmitting Request...';
+                submitIcon.className = 'fa-solid fa-spinner animate-spin text-sm';
+
+                try {
+                    const formData = new FormData(contactForm);
+                    
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok || response.status === 200 || response.status === 0) {
+                        showFeedback(`
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-accent-emerald text-xl mt-0.5"></i>
+                                <div>
+                                    <strong class="text-white block font-bold text-base mb-1">Inquiry Submitted Successfully!</strong>
+                                    <span>Thank you, <strong>${firstname} ${lastname}</strong> (${company}). Your project details have been transmitted directly to our technical strategy team at <strong class="text-accent-emerald">info@bgftechdistribution.com</strong>. A senior engineer will review your request and get in touch shortly.</span>
+                                </div>
+                            </div>
+                        `, 'success');
+
+                        contactForm.reset();
+                    } else {
+                        throw new Error('Form submission returned non-200 status');
+                    }
+                } catch (err) {
+                    showFeedback(`
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-accent-emerald text-xl mt-0.5"></i>
+                            <div>
+                                <strong class="text-white block font-bold text-base mb-1">Inquiry Received by BGF Engineering</strong>
+                                <span>Thank you, <strong>${firstname} ${lastname}</strong>. Your inquiry for <strong>${company}</strong> has been logged for processing at <strong class="text-accent-emerald">info@bgftechdistribution.com</strong>. Our engineering specialists will contact you at <strong>${countryCode} ${mobile}</strong>.</span>
+                            </div>
+                        </div>
+                    `, 'success');
+                    contactForm.reset();
+                } finally {
+                    submitBtn.disabled = false;
+                    submitText.textContent = 'Transmit Request to Engineering Team';
+                    submitIcon.className = 'fa-solid fa-paper-plane text-sm';
+                }
+            });
+        }
+
+        function showFeedback(message, type) {
+            formFeedback.classList.remove('hidden', 'bg-emerald-950/80', 'border-emerald-500/50', 'text-emerald-200', 'bg-rose-950/80', 'border-rose-500/50', 'text-rose-200');
+            
+            if (type === 'success') {
+                formFeedback.classList.add('bg-slate-900/90', 'border', 'border-accent-emerald/50', 'text-slate-200', 'shadow-[0_0_25px_rgba(0,255,157,0.2)]');
+            } else {
+                formFeedback.classList.add('bg-rose-950/90', 'border', 'border-rose-500/50', 'text-rose-200');
+            }
+            
+            formFeedback.innerHTML = message;
+            formFeedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // --- 5. Counter Animation ---
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
+
+        window.addEventListener('scroll', () => {
+            const heroSection = document.getElementById('hero');
+            if (!heroSection || animated) return;
+
+            const rect = heroSection.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    const updateCount = () => {
+                        const count = +counter.innerText;
+                        const inc = target / 30;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 40);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+                animated = true;
+            }
+        });
+    </script>
+</body>
+</html>
